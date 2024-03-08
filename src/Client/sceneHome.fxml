@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Business.Java.controllerSceneHome">
+   <children>
+      <Label fx:id="nameSong" alignment="CENTER" layoutY="220.0" prefHeight="65.0" prefWidth="600.0" text="Home">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <JFXSlider fx:id="timeProgress" layoutX="230.0" layoutY="287.0" onMousePressed="#isClicked" />
+      <JFXButton fx:id="btn_Pause" onAction="#pauseMusic" />
+      <JFXButton fx:id="btn_Play" layoutX="268.0" layoutY="338.0" onAction="#playMusic" prefHeight="42.0" prefWidth="47.0" text="Play" />
+      <JFXButton fx:id="btn_Pre" layoutX="175.0" layoutY="338.0" onAction="#preMusic" prefHeight="42.0" prefWidth="47.0" text="Pre" />
+      <JFXButton fx:id="btn_Next" layoutX="353.0" layoutY="338.0" onAction="#nextMusic" prefHeight="42.0" prefWidth="47.0" text="Next" />
+      <Label fx:id="increaseTime" layoutX="36.0" layoutY="292.0" text="Label" />
+      <Label fx:id="fullTime" layoutX="551.0" layoutY="286.0" text="Label" />
+      <TextField fx:id="searchBox" layoutX="200.0" layoutY="73.0" onKeyReleased="#searchMusic" prefHeight="25.0" prefWidth="200.0" promptText="Name song" />
+      <Label fx:id="lb_Search" layoutX="153.0" layoutY="77.0" text="Label" />
+      <Label fx:id="lb_title" layoutX="418.0" layoutY="77.0" text="Label" />
+      <ChoiceBox fx:id="choiceBox" layoutX="6.0" layoutY="98.0" pickOnBounds="false" prefHeight="25.0" prefWidth="97.0" />
+      <Line fx:id="line" endX="-3.666656494140625" endY="0.33332061767578125" layoutX="107.0" layoutY="123.0" startX="-100.0" />
+      <JFXSlider fx:id="changeVolumne" layoutX="400.0" layoutY="352.0" />
+      <JFXButton fx:id="btn_sound" layoutX="6.0" layoutY="139.0" onAction="#soundButton" prefHeight="42.0" prefWidth="47.0" text="Sound" />
+      <JFXButton fx:id="btn_mute" layoutX="6.0" layoutY="139.0" onAction="#muteButton" prefHeight="42.0" prefWidth="47.0" text="Sound" />
+      <JFXButton fx:id="btn_shuffle" layoutX="104.0" layoutY="346.0" onAction="#shuffleStatus" text="shuffleIcon" />
+      <JFXButton fx:id="btn_unShuffle" layoutX="104.0" layoutY="346.0" onAction="#unShuffleStatus" text="shuffleIcon" />
+      <JFXButton fx:id="btn_autoNext" layoutX="114.0" layoutY="288.0" onAction="#autoNext" text="autonext" />
+      <JFXButton fx:id="btn_unAutoNext" layoutX="106.0" layoutY="290.0" onAction="#unAutoNext" text="unAutonext" />
+      <JFXListView fx:id="listView" layoutX="192.0" layoutY="106.0" onMouseReleased="#selectMusic" prefHeight="111.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

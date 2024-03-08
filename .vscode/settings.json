@@ -1,0 +1,15 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar"
+        ],
+        "exclude": [
+            "lib/javafx-sdk-18.0.1/lib/javafx-swt.jar",
+            "lib/Javafx/javafx-swt.jar",
+            "lib/MusicPlayer.jar"
+        ]
+    },
+    "java.dependency.packagePresentation": "hierarchical",
+}

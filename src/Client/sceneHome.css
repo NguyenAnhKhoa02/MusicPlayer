@@ -1,0 +1,47 @@
+#pane{
+    /* -fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 55% , #a643e8, #d843e8); */
+    -fx-background-color: rgba(210, 44, 216, 0.10)
+}
+
+#btn_openFile{
+    -fx-background-color: #43e3e8;
+    /* -fx-background-color: transparent; */
+}
+
+#timeProgress .thumb{
+    -fx-background-color: purple;
+}
+
+#timeProgress .track{
+    -fx-pref-height: 3px;
+    -fx-background-color: #bba9c2;
+}
+
+#timeProgress >.colored-track{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#cd82e8,#a35cbd,#9137b3);
+}
+
+#listView{
+    -fx-background-color: purple;
+}
+
+
+#listView :hover{
+    -fx-background-color: #e66de8;
+}
+
+#listView :selected{
+    -fx-background-color: linear-gradient(#be8fbf,#be8fbf,#c061c2);
+}
+
+#choiceBox {
+    -fx-background-color: transparent;
+}
+
+#btn_Play :hover{
+    -fx-background-color: red;
+}
+
+
+    
+    
